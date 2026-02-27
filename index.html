@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shawn Sibanda | Full Stack Developer</title>
+<title>Shawn Sibanda | Full Stack Developer & Data Analyst</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -306,7 +306,7 @@ section {
 .section-description {
     font-size: 1.125rem;
     color: var(--text-secondary);
-    max-width: 600px;
+    max-width: 700px;
     margin: 0 auto;
 }
 
@@ -367,10 +367,10 @@ section {
     font-size: 0.95rem;
 }
 
-/* Projects Section */
+/* Projects Section - ENHANCED */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
 }
 
@@ -383,6 +383,8 @@ section {
     transition: all 0.4s ease;
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-card::before {
@@ -418,25 +420,30 @@ section {
     justify-content: center;
     font-weight: 700;
     margin-bottom: 1rem;
+    font-size: 1.1rem;
 }
 
 .project-card h3 {
     font-family: 'Space Grotesk', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     margin-bottom: 1rem;
     color: var(--text-primary);
+    line-height: 1.3;
 }
 
-.project-card p {
+.project-card > p {
     color: var(--text-secondary);
     margin-bottom: 1.5rem;
     line-height: 1.7;
+    font-size: 0.95rem;
+    flex-grow: 1;
 }
 
 .project-tags {
     display: flex;
     gap: 0.5rem;
     flex-wrap: wrap;
+    margin-bottom: 1.5rem;
 }
 
 .tag {
@@ -445,6 +452,35 @@ section {
     color: var(--accent-2);
     border-radius: 6px;
     font-size: 0.85rem;
+    font-weight: 500;
+}
+
+/* New: Project Highlights */
+.project-highlights {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.highlight-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.highlight-item i {
+    color: var(--accent-2);
+    font-size: 1rem;
+    margin-top: 0.2rem;
+    flex-shrink: 0;
+}
+
+.highlight-item span {
+    line-height: 1.5;
 }
 
 /* Contact Section */
@@ -592,7 +628,7 @@ footer {
                     Hi, I'm <span class="gradient-text">Shawn Sibanda</span>
                 </h1>
                 <p class="hero-subtitle">
-                    Computer Science Graduate | Data & Software Engineer | Python | SQL | Analytics
+                    Computer Science Graduate | Full-Stack Developer | Business Intelligence
                 </p>
                 <p class="hero-description">
                     Transforming data into actionable insights and building scalable software solutions. 
@@ -607,7 +643,7 @@ footer {
             
             <div class="hero-image">
                 <div class="profile-image-container">
-                    <!-- Replace 'your-photo.jpg' with your actual image file -->
+                    
                     <img src="shawn1.jpg" alt="Shawn Sibanda Profile Picture">
                 </div>
             </div>
@@ -625,16 +661,16 @@ footer {
         <div class="about-content">
             <div class="about-text">
                 <p>
-                    I'm a recent Computer Science graduate from the University of Johannesburg (2022-2025) 
+                    I'm a Computer Science graduate from the University of Johannesburg (graduating May 2026) 
                     with hands-on experience in full-stack development, business intelligence, and academic 
                     tutoring. My journey in tech has taken me from developing BI solutions for logistics 
-                    operations to mentoring university students in programming fundamentals.
+                    operations to mentoring 150+ university students in programming fundamentals.
                 </p>
                 <p>
                     With experience spanning business intelligence development, full-stack web applications, 
                     and backend systems, I bring a versatile skill set to every project. I've worked on 
-                    real-world projects including data analytics dashboards, full-stack university projects, 
-                    and scalable backend architectures.
+                    real-world projects including data analytics dashboards, enterprise ticketing systems, 
+                    machine learning applications, and scalable backend architectures.
                 </p>
             </div>
             
@@ -645,10 +681,6 @@ footer {
                         <div class="name">Java</div>
                     </div>
                     <div class="skill-card">
-                        <div class="icon"><i class="fab fa-python"></i></div>
-                        <div class="name">Python</div>
-                    </div>
-                    <div class="skill-card">
                         <div class="icon"><i class="fas fa-database"></i></div>
                         <div class="name">SQL</div>
                     </div>
@@ -657,8 +689,12 @@ footer {
                         <div class="name">JavaScript</div>
                     </div>
                     <div class="skill-card">
-                        <div class="icon"><i class="fas fa-code"></i></div>
-                        <div class="name">Web Dev</div>
+                        <div class="icon"><i class="fab fa-react"></i></div>
+                        <div class="name">React</div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="icon"><i class="fas fa-leaf"></i></div>
+                        <div class="name">Spring Boot</div>
                     </div>
                     <div class="skill-card">
                         <div class="icon"><i class="fab fa-git-alt"></i></div>
@@ -666,11 +702,11 @@ footer {
                     </div>
                     <div class="skill-card">
                         <div class="icon"><i class="fas fa-chart-line"></i></div>
-                        <div class="name">BI Tools</div>
+                        <div class="name">Power BI</div>
                     </div>
                     <div class="skill-card">
-                        <div class="icon"><i class="fas fa-brain"></i></div>
-                        <div class="name">AI/ML</div>
+                        <div class="icon"><i class="fab fa-wordpress"></i></div>
+                        <div class="name">WordPress</div>
                     </div>
                 </div>
             </div>
@@ -684,50 +720,195 @@ footer {
             <div class="section-tag">My Work</div>
             <h2 class="section-title">Featured Projects</h2>
             <p class="section-description">
-                A selection of my recent work showcasing various technologies and problem-solving approaches
+                From enterprise dashboards to intelligent systems — showcasing end-to-end technical execution and business impact
             </p>
         </div>
         
         <div class="projects-grid">
+            <!-- Project 1: Technician Ticketing System -->
             <div class="project-card">
                 <div class="project-number">01</div>
-                <h3>Business Intelligence Dashboard</h3>
+                <h3>Technician Ticketing Management System</h3>
                 <p>
-                    Developed data reporting solutions and interactive dashboards for A and B Transport Logistics,
-                    visualizing key performance metrics and enabling data-driven decision-making across operations.
+                    Full-stack IT support ticketing system with role-based authentication, real-time status tracking, 
+                    and priority management. Built collaborative team project simulating enterprise IT operations with 
+                    RESTful API architecture and relational database design.
                 </p>
                 <div class="project-tags">
-                    <span class="tag">BI Tools</span>
-                    <span class="tag">Data Analytics</span>
-                    <span class="tag">SQL</span>
+                    <span class="tag">Spring Boot</span>
+                    <span class="tag">MySQL</span>
+                    <span class="tag">REST API</span>
+                    <span class="tag">Full Stack</span>
+                </div>
+                <div class="project-highlights">
+                    <div class="highlight-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Role-based access control (Admin/Technician/User)</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>CRUD operations with priority categorization</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Database schema with relational modeling</span>
+                    </div>
                 </div>
             </div>
 
+            <!-- Project 2: Image Classification System -->
             <div class="project-card">
                 <div class="project-number">02</div>
-                <h3>Full Stack University Project</h3>
+                <h3>Image Similarity & Classification System</h3>
                 <p>
-                    Led full-stack development for Informatics 3B third-year project at UJ, implementing
-                    modern web technologies and delivering a comprehensive application from conception to deployment.
+                    Machine learning desktop application implementing K-Nearest Neighbors algorithm and A* search 
+                    for intelligent image analysis. Features custom JavaFX GUI for feature extraction visualization 
+                    and real-time classification with optimized computational performance.
                 </p>
                 <div class="project-tags">
-                    <span class="tag">Full Stack</span>
-                    <span class="tag">JavaScript</span>
-                    <span class="tag">Web Dev</span>
+                    <span class="tag">Java</span>
+                    <span class="tag">JavaFX</span>
+                    <span class="tag">KNN Algorithm</span>
+                    <span class="tag">A* Search</span>
+                </div>
+                <div class="project-highlights">
+                    <div class="highlight-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>ML-based feature similarity detection</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Optimized search algorithms for large datasets</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Interactive GUI with real-time results</span>
+                    </div>
                 </div>
             </div>
 
+            <!-- Project 3: ZeroInData Website -->
             <div class="project-card">
                 <div class="project-number">03</div>
-                <h3>Backend System Architecture</h3>
+                <h3>ZeroInData Consulting — Corporate Website</h3>
                 <p>
-                    Designed and implemented backend architecture for Computer Science 3B final year project,
-                    focusing on scalability, security, and efficient data processing.
+                    Professional corporate website for data analytics and AI consulting firm. Delivered complete 
+                    digital presence with WordPress CMS, custom theme development, SEO optimization, and performance 
+                    tuning to support client acquisition and brand visibility.
                 </p>
                 <div class="project-tags">
-                    <span class="tag">Backend</span>
-                    <span class="tag">Java</span>
-                    <span class="tag">Database</span>
+                    <span class="tag">WordPress</span>
+                    <span class="tag">HTML/CSS</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">SEO</span>
+                    <span class="tag">Hostinger</span>
+                </div>
+                <div class="project-highlights">
+                    <div class="highlight-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Full CMS setup with custom theme configuration</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>SEO-ready with meta tags and structured content</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Responsive design across all devices</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4: Business Intelligence Dashboard -->
+            <div class="project-card">
+                <div class="project-number">04</div>
+                <h3>Business Intelligence Dashboard — Fleet Analytics</h3>
+                <p>
+                    Enterprise-grade Power BI dashboards tracking delivery performance, route efficiency, and 
+                    operational KPIs for logistics management. Automated reporting reduced manual work by 75%, 
+                    enabling data-driven decision-making for fleet optimization.
+                </p>
+                <div class="project-tags">
+                    <span class="tag">Power BI</span>
+                    <span class="tag">SQL Server</span>
+                    <span class="tag">Data Analytics</span>
+                    <span class="tag">Automation</span>
+                </div>
+                <div class="project-highlights">
+                    <div class="highlight-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>5 interactive dashboards for management insights</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>18 months of delivery data analysis</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>75% reduction in reporting time</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 5: To-Do List App -->
+            <div class="project-card">
+                <div class="project-number">05</div>
+                <h3>Task Management Web Application</h3>
+                <p>
+                    Modern task management app built with React demonstrating component-based architecture and 
+                    state management. Features persistent storage, task filtering, and responsive UI design with 
+                    full CRUD operations and real-time updates.
+                </p>
+                <div class="project-tags">
+                    <span class="tag">React</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">Local Storage</span>
+                    <span class="tag">React Hooks</span>
+                </div>
+                <div class="project-highlights">
+                    <div class="highlight-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Component-based React architecture</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Persistent data with browser storage</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Advanced filtering (All/Completed/Pending)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 6: Color Picker Tool -->
+            <div class="project-card">
+                <div class="project-number">06</div>
+                <h3>Color Picker & Palette Generator</h3>
+                <p>
+                    Web-based design tool for UI/UX professionals featuring real-time color preview, HEX/RGB 
+                    conversion, and intelligent palette generation. Implements color theory algorithms for 
+                    complementary and analogous color suggestions with clipboard integration.
+                </p>
+                <div class="project-tags">
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">HTML5</span>
+                    <span class="tag">CSS3</span>
+                    <span class="tag">UI/UX</span>
+                </div>
+                <div class="project-highlights">
+                    <div class="highlight-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Real-time color preview and conversion</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Automated palette generation with color theory</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Copy-to-clipboard for workflow efficiency</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -793,9 +974,29 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+// Optional: Add animation on scroll for project cards
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+        }
+    });
+}, observerOptions);
+
+document.querySelectorAll('.project-card').forEach(card => {
+    card.style.opacity = '0';
+    card.style.transform = 'translateY(30px)';
+    card.style.transition = 'all 0.6s ease';
+    observer.observe(card);
+});
 </script>
 
 </body>
-
 </html>
-
