@@ -1032,9 +1032,25 @@ footer {
         padding: 0 1.5rem;
     }
     
+    .logo {
+        font-size: 1.25rem;
+    }
+    
     nav {
         gap: 1rem;
         font-size: 0.9rem;
+    }
+    
+    nav a {
+        font-size: 0.85rem;
+    }
+    
+    header {
+        padding: 1rem 0;
+    }
+    
+    header.scrolled {
+        padding: 0.75rem 0;
     }
     
     .hero {
@@ -1119,6 +1135,32 @@ footer {
         padding: 0 1.25rem;
     }
     
+    .nav-container {
+        padding: 0 1.25rem;
+    }
+    
+    .logo {
+        font-size: 1.1rem;
+    }
+    
+    nav {
+        gap: 0.6rem;
+        font-size: 0.8rem;
+    }
+    
+    nav a {
+        font-size: 0.75rem;
+        padding: 0.25rem 0;
+    }
+    
+    header {
+        padding: 0.75rem 0;
+    }
+    
+    header.scrolled {
+        padding: 0.5rem 0;
+    }
+    
     .hero {
         padding: 5rem 0 2rem;
     }
@@ -1144,11 +1186,6 @@ footer {
     .section-tag {
         font-size: 0.8rem;
         padding: 0.4rem 0.8rem;
-    }
-    
-    nav {
-        gap: 0.75rem;
-        font-size: 0.85rem;
     }
     
     .skills-grid {
@@ -1194,6 +1231,25 @@ footer {
     .contact-link {
         padding: 0.9rem 1.25rem;
         font-size: 0.9rem;
+    }
+}
+
+/* Extra small screens - navigation overflow fix */
+@media (max-width: 360px) {
+    .nav-container {
+        padding: 0 1rem;
+    }
+    
+    .logo {
+        font-size: 1rem;
+    }
+    
+    nav {
+        gap: 0.4rem;
+    }
+    
+    nav a {
+        font-size: 0.7rem;
     }
 }
 </style>
@@ -1276,7 +1332,7 @@ footer {
                     Hi, I'm <span class="gradient-text">Shawn Sibanda</span>
                 </h1>
                 <p class="hero-subtitle">
-                    Computer Science Graduate | Full-Stack Developer | Business Intelligence
+                    Computer Science Graduate | Software engineering | Data Analyst
                 </p>
                 <p class="hero-description">
                     Transforming data into actionable insights and building scalable software solutions. 
@@ -1312,12 +1368,12 @@ footer {
                     I'm a Computer Science graduate from the University of Johannesburg (graduating May 2026) 
                     with hands-on experience in full-stack development, business intelligence, and academic 
                     tutoring. My journey in tech has taken me from developing BI solutions for logistics 
-                    operations to mentoring 150+ university students in programming fundamentals.
+                    operations to mentoring 30+ university students in programming fundamentals.
                 </p>
                 <p>
                     With experience spanning business intelligence development, full-stack web applications, 
                     and backend systems, I bring a versatile skill set to every project. I've worked on 
-                    real-world projects including data analytics dashboards, enterprise ticketing systems, 
+                    real world projects including data analytics dashboards, enterprise ticketing systems, 
                     machine learning applications, and scalable backend architectures.
                 </p>
             </div>
@@ -1663,7 +1719,7 @@ footer {
 
 <footer>
     <div class="container">
-        <p>© 2026 Shawn Sibanda. Built with passion for technology and problem-solving.</p>
+        <p>© 2026 Shawn Sibanda.</p>
     </div>
 </footer>
 
